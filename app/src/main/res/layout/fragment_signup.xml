@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/whatsapp_image_2023_10_15_at_12_40_26_7545b172">
+
+
+    <EditText
+        android:id="@+id/etNameSignUp"
+        android:layout_width="249dp"
+        android:layout_height="41dp"
+        android:layout_margin="10dp"
+        android:layout_marginTop="40dp"
+        android:autofillHints="name"
+        android:background="@color/grayishWhite"
+        android:ems="10"
+        android:hint="Enter Name"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:padding="10dp"
+        android:textSize="21sp"
+        android:textStyle="bold|normal"
+        app:layout_constraintBottom_toTopOf="@+id/etEmailSignUp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.629"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.26"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <EditText
+        android:id="@+id/etEmailSignUp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:autofillHints="emailAddress"
+        android:background="@color/grayishWhite"
+        android:ems="10"
+        android:hint="Enter Email"
+
+        android:inputType="textEmailAddress"
+
+        android:minHeight="48dp"
+        android:padding="10dp"
+        android:textSize="21sp"
+        android:textStyle="bold|normal"
+
+
+        app:layout_constraintBottom_toTopOf="@+id/etPasswordSignUp"
+        app:layout_constraintEnd_toEndOf="@+id/etNameSignUp"
+        app:layout_constraintStart_toStartOf="@+id/etNameSignUp"
+        app:layout_constraintTop_toBottomOf="@+id/etNameSignUp" />
+
+    <EditText
+        android:id="@+id/etPasswordSignUp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:autofillHints="password"
+        android:background="@color/grayishWhite"
+        android:ems="10"
+        android:hint="Enter Password"
+
+
+        android:inputType="textPassword"
+        android:minHeight="48dp"
+        android:padding="10dp"
+        android:textSize="21sp"
+        android:textStyle="bold|normal"
+
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/etEmailSignUp"
+        app:layout_constraintStart_toStartOf="@+id/etEmailSignUp"
+        app:layout_constraintTop_toBottomOf="@+id/etEmailSignUp" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnSignUp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/custom_button"
+        android:text="Sign Up"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toStartOf="@+id/guideline4"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/guideline3"
+        app:layout_constraintTop_toBottomOf="@+id/tvNavigateToSignIn" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.2" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="374dp" />
+
+    <TextView
+        android:id="@+id/tvNavigateToSignIn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Already have Account ? SignIn"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/etPasswordSignUp"
+        app:layout_constraintStart_toStartOf="@+id/etPasswordSignUp"
+        app:layout_constraintTop_toBottomOf="@+id/etPasswordSignUp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="177dp"
+        android:layout_height="84dp"
+        android:text="Sign Up"
+        android:textColor="#092147"
+        android:textSize="36dp"
+        app:layout_constraintBottom_toTopOf="@+id/etNameSignUp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.5" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
